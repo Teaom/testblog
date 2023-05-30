@@ -1,0 +1,17 @@
+<div>
+ <h2>My Posts</h2>
+    <a href="/newpost">NewPost</a>
+    <a href="/">Home</a>
+
+  {{#each posts}}
+  <div class="divs">
+    <h2>
+        {{title}}
+    </h2>
+    <h3>
+        {{body}}
+    </h3>
+<h3 id="edits" ><a href="/dashboard/{{id}}/editpost">edit post</a></h3>
+    </div>
+    {{/each}}
+</div>
